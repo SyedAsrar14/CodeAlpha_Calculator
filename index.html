@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <div id="calculator_border">
+    <input type="text" id="inputBox" readonly>
+    <div id="button_container">
+    <button class="button" onclick=" currVal='';
+    document.querySelector('#inputBox').value= currVal;">C</button>
+    <button class="button" onclick=" currVal+=1;
+    document.querySelector('#inputBox').value= currVal;">1</button>
+    <button class="button" onclick=" currVal+=2;
+    document.querySelector('#inputBox').value= currVal;">2</button>
+    <button class="button" onclick=" currVal=currVal+'+';
+    document.querySelector('#inputBox').value= currVal;">+</button>
+    <button class="button" onclick=" currVal+=3;
+    document.querySelector('#inputBox').value= currVal;">3</button>
+    <button class="button" onclick=" currVal+=4;
+    document.querySelector('#inputBox').value= currVal;">4</button>
+    <button class="button" onclick=" currVal+='-';
+    document.querySelector('#inputBox').value= currVal;">-</button>
+    <button class="button" onclick=" currVal+=5;
+    document.querySelector('#inputBox').value= currVal;">5</button>
+    <button class="button" onclick=" currVal+=6;
+    document.querySelector('#inputBox').value= currVal;">6</button>
+    <button class="button" onclick=" currVal+='*';
+    document.querySelector('#inputBox').value= currVal;">*</button>
+    <button class="button" onclick=" currVal+=7;
+    document.querySelector('#inputBox').value= currVal;">7</button>
+    <button class="button" onclick=" currVal+=8;
+    document.querySelector('#inputBox').value= currVal;">8</button>
+    <button class="button" onclick=" currVal+='/';
+    document.querySelector('#inputBox').value= currVal;">/</button>
+    <button class="button" onclick=" currVal=eval(currVal);
+    document.querySelector('#inputBox').value= currVal;">=</button>
+    <button class="button" onclick=" currVal+=9;
+    document.querySelector('#inputBox').value= currVal;">9</button>
+    <button class="button" onclick=" currVal+=0;
+    document.querySelector('#inputBox').value= currVal;">0</button>
+    <button class="button" onclick=" currVal+='.';
+    document.querySelector('#inputBox').value= currVal;">.</button>
+    </div>
+  </div>
+  <script>
+    let currVal='';
+    document.querySelector('#inputBox').value= currVal;
+  </script>
+</body>
+</html>
